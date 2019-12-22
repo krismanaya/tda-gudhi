@@ -78,7 +78,7 @@ def main():
     data = df_mean[['Average User Rating',
                     'User Rating Count', 'Price', 'In-app Purchases', 'categoryCount',
                     'ratio_name_assn', 'ration_name_recv', 'ratio_sub_assn',
-                    'ration_sub_recv', 'ratio_categories_assn', 'ration_categories_recv']].values
+                    'ration_sub_recv', 'ratio_categories_assn', 'ration_categories_recv']].head(5000).values
     return data, df_mean, df_games, df
 
 
